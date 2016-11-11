@@ -11,11 +11,7 @@ class Livro
     "Autor: #{@autor}, Isbn: #{@isbn}, Páginas: #{@numero_de_paginas}"
   end
   
-  def preco
-    @preco
-  end
-  
-  def preco=(preco)
-    @preco = preco
-  end
+  #getter and setter by attr_writer and attr_reader
+  attr_writer :preco
+  attr_reader :preco
 end
